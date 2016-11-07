@@ -1,0 +1,27 @@
+{
+    "code": 1,
+    "message": "success",
+    "data": [
+        {
+			"id": "1",
+            "type": "1",
+            "title": "这是title1",
+            "text": "这是text1这是text1这是text1这是text1这是text1这是text1这是text1这是text1",
+            "img": "http://img.shitouer.com/game/recommend/gg.jpg"
+        },
+        {
+			"id": "2",
+            "type": "1",
+            "title": "这是title2",
+            "text": "这是text2这是text2这是text2这是text2这是text2这是text2这是text2这是text2这是text2这是text2这是text2",
+            "img": "http://img.shitouer.com/game/recommend/gg.jpg"
+        },
+        {
+			"id": "3",
+            "type": "1",
+            "title": "这是title3",
+            "text": "这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3这是text3",
+            "img": "http://img.shitouer.com/game/recommend/gg.jpg"
+        }
+    ]
+}
