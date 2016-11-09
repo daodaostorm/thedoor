@@ -48,7 +48,7 @@
 
         </RelativeLayout>
 
-        <ImageView
+        <com.daodaostorm.thedoor.common.view.AsyncImageView
             android:id="@+id/testpic"
             android:layout_height="match_parent"
             android:layout_width="wrap_content"

@@ -9,13 +9,15 @@ public class MessageObj {
     private String title;
     private String content;
     private int icon;
+	private String imageUrl;
 
-    public MessageObj(String username,int icon ,String count, String title, String content) {
+    public MessageObj(String username,int icon ,String count, String title, String content, String imageUrl) {
         this.username = username;
         this.count = count;
         this.title = title;
         this.content = content;
         this.icon = icon;
+		this.imageUrl = imageUrl;
     }
 
     public String getUsername() {
@@ -34,6 +36,10 @@ public class MessageObj {
         return count;
     }
 
+	public String getimageUrl() {
+        return imageUrl;
+    }
+	
     public int getIcon() {
         return icon;
     }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.daodaostorm.thedoor.common.view.AsyncImageView;
 
 import java.util.List;
 
@@ -36,6 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         myViewHolder.mTitle.setText(mData.get(i).getTitle());
         myViewHolder.mContent.setText(mData.get(i).getContent());
         myViewHolder.itemView.setTag(mData.get(i).getTitle());
+		myViewHolder.mtestPic.setImageUrl(mData.get(i).getimageUrl());
     }
 
     @Override
@@ -63,11 +65,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         //public TextView mCount;
         public TextView mTitle;
         public TextView mContent;
-        public ImageView mUserIcon;
+		public ImageView mUserIcon;
+        public AsyncImageView mtestPic;
         public MyViewHolder(View itemView) {
             super(itemView);
             mUsername = (TextView) itemView.findViewById(R.id.username);
             mUserIcon = (ImageView) itemView.findViewById(R.id.usericon);
+			mtestPic = (AsyncImageView) itemView.findViewById(R.id.testpic);
             //mCount = (TextView) itemView.findViewById(R.id.count);
             mTitle = (TextView) itemView.findViewById(R.id.title);
             mContent = (TextView) itemView.findViewById(R.id.content);

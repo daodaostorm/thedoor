@@ -146,19 +146,19 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         mData = new ArrayList<MessageObj>();
         MessageObj obj1 = new MessageObj("神盾局", R.mipmap.shield, "5.6K", "神盾局是怎么样的一个组织？",
-                "神盾局，全称为国土战略防御攻击与后勤保障局，由斯坦·李与杰克·科比联合创造。神盾局是国际安全理事会专门用于处理各种奇异事件的特殊部队");
+                "神盾局，全称为国土战略防御攻击与后勤保障局，由斯坦·李与杰克·科比联合创造。神盾局是国际安全理事会专门用于处理各种奇异事件的特殊部队", "http://img.shitouer.com/game/recommend/gg.jpg");
         mData.add(obj1);
         MessageObj obj2 = new MessageObj("Stark", R.mipmap.stark, "7.8K", "钢铁侠是谁？",
-                "托尼·斯塔克（小罗伯特·唐尼饰）是“斯塔克工业”的董事长，作为钢铁侠 官方剧照钢铁侠军火商他毁誉不一，但还是过着上流生活。此时，");
+                "托尼·斯塔克（小罗伯特·唐尼饰）是“斯塔克工业”的董事长，作为钢铁侠 官方剧照钢铁侠军火商他毁誉不一，但还是过着上流生活。此时，", "http://img.shitouer.com/game/poster/100090-s.jpg");
         mData.add(obj2);
         MessageObj obj3 = new MessageObj("索尔", R.mipmap.thor, "7.8K", "雷神索尔的能力如何？",
-                "北欧神话里挥舞着大铁锤、掌控着风暴和闪电的天神，还能用铁锤打开时空之门。暴脾气的他因为自大鲁莽的行为重新点燃了一场古老战争的战火，之后被贬到凡间被迫与人类一起生活。");
+                "北欧神话里挥舞着大铁锤、掌控着风暴和闪电的天神，还能用铁锤打开时空之门。暴脾气的他因为自大鲁莽的行为重新点燃了一场古老战争的战火，之后被贬到凡间被迫与人类一起生活。", "http://img.shitouer.com/game/recommend/gg.jpg");
         mData.add(obj3);
         MessageObj obj4 = new MessageObj("罗杰斯", R.mipmap.steven, "7.8K", "怎么评价美国队长3？",
-                "该片根据漫威2006年出版的漫画大事件《内战》改编，背景故事承接于《复仇者联盟2：奥创纪元》事件的余波中，讲述了奥创事件后引发的");
+                "该片根据漫威2006年出版的漫画大事件《内战》改编，背景故事承接于《复仇者联盟2：奥创纪元》事件的余波中，讲述了奥创事件后引发的", "http://img.shitouer.com/game/poster/100013-s.jpg");
         mData.add(obj4);
         MessageObj obj5 = new MessageObj("黑寡妇", R.mipmap.widow, "7.8K", "黑寡妇是一个怎么样的角色？",
-                "1928年出生于前苏联的斯大林格勒，自幼被前苏联特工人员训练成特工，身体经前苏联政府基因改造后大大延缓了其衰老速度，并增强其免疫系统以及抗击打能力，加上本身多年的各种体能及精神上的训练");
+                "1928年出生于前苏联的斯大林格勒，自幼被前苏联特工人员训练成特工，身体经前苏联政府基因改造后大大延缓了其衰老速度，并增强其免疫系统以及抗击打能力，加上本身多年的各种体能及精神上的训练", "http://img.shitouer.com/game/recommend/gg.jpg");
         mData.add(obj5);
         choices = new ArrayList<String>();
         choiceIcon = new ArrayList<>();
