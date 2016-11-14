@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private List<String> choices;
     private List<Integer> choiceIcon;
     private MyAdapter recyclerAdapter;
-
+	private int numCount;
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -50,7 +50,12 @@ public class MainActivity extends AppCompatActivity {
             switch (msg.what) {
                 case 1:
                     swipeRefreshLayout.setRefreshing(false);
-                    recyclerAdapter.notifyDataSetChanged();
+                    //recyclerAdapter.notifyDataSetChanged();
+					numCount = numCount + 1;
+					MessageObj obj1 = new MessageObj("神盾局" + numCount, R.mipmap.shield, "5.6K", "神盾局是怎么样的一个组织？",
+                "神盾局，全称为国土战略防御攻击与后勤保障局，由斯坦·李与杰克·科比联合创造。神盾局是国际安全理事会专门用于处理各种奇异事件的特殊部队", "http://img.shitouer.com/game/recommend/gg.jpg");
+					recyclerAdapter.add(obj1, 0);
+                    recyclerView.scrollToPosition(0);
                     break;
                 default:
                     break;
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+		numCount = 1;
         initData();
         initViews();
 

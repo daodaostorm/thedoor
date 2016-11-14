@@ -55,6 +55,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
         }
     }
 
+	public void add(MessageObj msgObj, int position) {
+        mData.add(position, msgObj);
+        notifyItemInserted(position);
+    }
+	
     public void setOnItemClickListener(OnRecyclerViewItemClickListener listener) {
         this.mOnItemClickListener = listener;
     }
