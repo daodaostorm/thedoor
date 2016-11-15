@@ -31,12 +31,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     }
     @Override
     public void onBindViewHolder(MyViewHolder myViewHolder, int i) {
-        myViewHolder.mUsername.setText(mData.get(i).getUsername());
-        myViewHolder.mUserIcon.setImageResource(mData.get(i).getIcon());
+        //myViewHolder.mUsername.setText(mData.get(i).getUsername());
+        //myViewHolder.mUserIcon.setImageResource(mData.get(i).getIcon());
         //myViewHolder.mCount.setText(mData.get(i).getCount());
-        myViewHolder.mTitle.setText(mData.get(i).getTitle());
+        //myViewHolder.mTitle.setText(mData.get(i).getTitle());
         myViewHolder.mContent.setText(mData.get(i).getContent());
-        myViewHolder.itemView.setTag(mData.get(i).getTitle());
+        myViewHolder.itemView.setTag(mData.get(i).getId());
 		myViewHolder.mtestPic.setImageUrl(mData.get(i).getimageUrl());
     }
 
@@ -68,22 +68,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
 
         public TextView mUsername;
         //public TextView mCount;
-        public TextView mTitle;
+        //public TextView mTitle;
         public TextView mContent;
-		public ImageView mUserIcon;
+		//public ImageView mUserIcon;
         public AsyncImageView mtestPic;
         public MyViewHolder(View itemView) {
             super(itemView);
-            mUsername = (TextView) itemView.findViewById(R.id.username);
-            mUserIcon = (ImageView) itemView.findViewById(R.id.usericon);
+           // mUsername = (TextView) itemView.findViewById(R.id.username);
+            //mUserIcon = (ImageView) itemView.findViewById(R.id.usericon);
 			mtestPic = (AsyncImageView) itemView.findViewById(R.id.testpic);
             //mCount = (TextView) itemView.findViewById(R.id.count);
-            mTitle = (TextView) itemView.findViewById(R.id.title);
+           // mTitle = (TextView) itemView.findViewById(R.id.title);
             mContent = (TextView) itemView.findViewById(R.id.content);
         }
     }
 
     public static interface OnRecyclerViewItemClickListener {
-        void onItemClick(View view, String title);
+        void onItemClick(View view, String id);
     }
 }

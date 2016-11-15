@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+
+		<RelativeLayout
             android:id="@+id/relativelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -31,30 +32,21 @@
                 android:id="@+id/username"
                 android:layout_height="50dp"
                 android:layout_width="wrap_content"
-                android:text="罗杰斯"
+                android:text="视频"
                 android:textSize="17sp"
                 android:textColor="#8cc3ff"
                 android:gravity="center"
                 android:layout_toRightOf="@id/usericon"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="赞同了该答案"
-                android:textSize="17sp"
-                android:gravity="center_vertical"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@id/username"/>
-
         </RelativeLayout>
-
+		
         <com.daodaostorm.thedoor.common.view.AsyncImageView
             android:id="@+id/testpic"
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:src="@mipmap/testpic"
             android:layout_marginLeft="4dp"
-            android:layout_below="@id/relativelayout"
+			android:layout_below="@id/relativelayout"
             android:layout_centerVertical="true"/>
 
         <TextView
