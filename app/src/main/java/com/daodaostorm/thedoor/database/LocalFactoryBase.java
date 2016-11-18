@@ -437,19 +437,6 @@ public abstract class LocalFactoryBase<T> {
 			//LogUtils.e("LocalFactoryBase", "drop table:" + tableName + "error.");
 		}
     }
-    
-	/**
-     * 判断表是否存在
-     * @param tabName 表名
-     * @return
-     */
-    public boolean tabIsExist(){
-            boolean result = false;
-            String tabName = getTableName();
-            if(tabName == null){
-                    return false;
-            }
-            return helper.tabIsExist(tabName);
-    }
+
     
 }
